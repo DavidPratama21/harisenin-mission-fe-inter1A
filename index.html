@@ -7,13 +7,27 @@
     <link rel="stylesheet" href="main.css">
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <script src="main.js"></script>
+    <style>
+        .completed {
+            color: #ddd;
+            text-decoration: line-through;
+        }
+    </style>
 </head>
-<body class="text-center m-8">
-    <div class="container">
-        <h1>Simple ToDo List</h1>
-        <input type="text" id="new-task" placeholder="Enter new task">
-        <button class="bg-red-100 hover:bg-red-500 rounded p-2" onclick="addTask()">Add</button>
-        <ul id="task-list"></ul>
+<body class="text-center m-8 bg-slate-800">
+    <div class="grid gap-2 bg-gray-200 p-8 rounded-lg shadow-md">
+        <h1 class="text-xl text-slate-900 font-bold">Simple ToDo List</h1>
+        <input class="rounded border-2 p-2" type="text" id="new-task" placeholder="Enter new task">
+        <button 
+            class="bg-slate-500 rounded p-2 font-bold 
+                hover:bg-slate-900 hover:text-white" 
+            onclick="addTask()"
+            >
+            Add Task
+        </button>
+        <ul 
+            class="grid gap-1"
+            id="task-list"></ul>
     </div>
 
 </body>
