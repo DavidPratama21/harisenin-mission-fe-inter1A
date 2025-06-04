@@ -61,7 +61,12 @@ const SemuaProduk = () => {
             
             {/* Frame 1000004504 */}
             <div className="flex gap-4">
-              <button></button>
+              <button className="grid h-12 px-3 rounded-[10px] border border-other-border bg-white">
+                <div className="flex items-center gap-2 py-3 pl-[5px]">
+                  <p>Urutkan</p>
+                  <ChevronDown />
+                </div>
+              </button>
             </div>
             {/* Frame 1000004505 */}
             {/* Pagination/Page Nav */}
