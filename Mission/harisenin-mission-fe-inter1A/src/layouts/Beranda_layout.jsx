@@ -3,10 +3,9 @@ import { Menu, LogOut } from "lucide-react";
 import { Link } from "react-router";
 import Header from "../components/headers/Header_beranda";
 import Footer from "../components/organisems/Footer";
-import Beranda from "../pages/Beranda";
 import Profile from "../assets/Profile.png";
 
-const Beranda_layout = () => {
+const Beranda_layout = ({children}) => {
   const [isProfileOpen, setIsProfileOpen] = useState(false);
   const dropDownRef = useRef(null);
 
@@ -31,9 +30,11 @@ const Beranda_layout = () => {
           className="sm:hidden"
           onClick={() => setIsProfileOpen(!isProfileOpen)}
         />
-        <a className="hidden font-semibold leading-[140%] tracking-[0.2px] text-dark-secondary sm:inline">
+        <Link 
+          to="/kategori"
+          className="hidden font-semibold leading-[140%] tracking-[0.2px] text-dark-secondary sm:inline">
           Kategori
-        </a>
+        </Link>
 
         <button onClick={() => setIsProfileOpen(!isProfileOpen)}>
           <img
@@ -84,7 +85,7 @@ const Beranda_layout = () => {
         </div>
       )}
 
-      <Beranda />
+        {children}
       <Footer />
     </div>
   );

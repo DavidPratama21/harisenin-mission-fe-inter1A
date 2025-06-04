@@ -2,6 +2,7 @@ import Logo from "../../assets/Logo.svg";
 import { Link } from "react-router";
 
 const Header_beranda = ({children}) => {
+
   return (
     // Navigation
     <div 
@@ -14,10 +15,9 @@ const Header_beranda = ({children}) => {
       <div className="flex justify-between items-center w-full ">
         {/* Logo */}
         <Link
-          to="/Beranda"
-          className="
-            grid place-content-center h-[42px] w-[152px]
-            sm:h-[56px] sm:w-[237px]"
+          to="/"
+          className={`grid place-content-center h-[42px] w-[152px]
+            sm:h-[56px] sm:w-[237px]`}
         > 
           <img
             src={Logo}
