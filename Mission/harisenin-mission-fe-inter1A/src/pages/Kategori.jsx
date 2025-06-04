@@ -1,5 +1,23 @@
 import Kategori_layout from "../layouts/Kategori_layout";
-import { BookText, ChevronDown, Clock, ShoppingBag } from 'lucide-react';
+import Card from "..//components/molecules/Card";
+import { BookText, ChevronDown, Clock, Search, ShoppingBag } from 'lucide-react';
+import card_1 from "../assets/Card_images/card_1.jpg"
+import card_2 from "../assets/Card_images/card_2.jpg"
+import card_3 from "../assets/Card_images/card_3.jpg"
+import card_4 from "../assets/Card_images/card_4.jpg"
+import card_5 from "../assets/Card_images/card_5.jpg"
+import card_6 from "../assets/Card_images/card_6.jpg"
+import card_7 from "../assets/Card_images/card_7.jpg"
+import card_8 from "../assets/Card_images/card_8.jpg"
+import card_9 from "../assets/Card_images/card_9.jpg"
+import tutor_1 from "../assets/Avatar_tutor/1.png"
+import tutor_2 from "../assets/Avatar_tutor/2.png"
+import tutor_3 from "../assets/Avatar_tutor/3.png"
+import tutor_4 from "../assets/Avatar_tutor/4.png"
+import tutor_5 from "../assets/Avatar_tutor/5.png"
+import tutor_6 from "../assets/Avatar_tutor/6.png"
+import tutor_7 from "../assets/Avatar_tutor/7.png"
+import tutor_8 from "../assets/Avatar_tutor/8.png"
 
 const SemuaProduk = () => {
   return (
@@ -60,15 +78,32 @@ const SemuaProduk = () => {
             </div>
             
             {/* Frame 1000004504 */}
-            <div className="flex gap-4">
-              <button className="grid h-12 px-3 rounded-[10px] border border-other-border bg-white">
+            <div className="flex gap-4 justify-between">
+              <button className="grid h-12 px-3 rounded-[10px] border border-other-border bg-white text-dark-secondary">
                 <div className="flex items-center gap-2 py-3 pl-[5px]">
-                  <p>Urutkan</p>
+                  <p className="font-medium">Urutkan</p>
                   <ChevronDown />
+                </div>
+              </button>
+              <button className="grid h-12 px-3 rounded-[10px] border border-other-border bg-white text-dark-secondary">
+                <div className="flex items-center gap-2 py-3 pl-[5px]">
+                  <p className="font-medium">Cari Kelas</p>
+                  <Search />
                 </div>
               </button>
             </div>
             {/* Frame 1000004505 */}
+            <div className="grid justify-start gap-5">
+              <Card image={card_1} tutor={tutor_1}/>
+              <Card image={card_2} tutor={tutor_2}/>
+              <Card image={card_3} tutor={tutor_3}/>
+              <Card image={card_4} tutor={tutor_4}/>
+              <Card image={card_5} tutor={tutor_5}/>
+              <Card image={card_6} tutor={tutor_6}/>
+              <Card image={card_7} tutor={tutor_7}/>
+              <Card image={card_8} tutor={tutor_8}/>
+              <Card image={card_9} tutor={tutor_3}/>
+            </div>
             {/* Pagination/Page Nav */}
           </div>
         </div>
