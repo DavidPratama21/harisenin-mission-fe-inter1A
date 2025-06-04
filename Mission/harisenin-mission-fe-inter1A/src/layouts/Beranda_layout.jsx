@@ -52,31 +52,31 @@ const Beranda_layout = ({children}) => {
             bg-white shadow-[0_0_1px_0_rgba(62,67,74,0.31),0_18px_28px_0_rgba(62,67,74,0.15)]"
         >
           <Link
-            to="/SemuaProduk"
+            to="/kategori"
             className="sm:hidden text-dark-secondary font-medium leading-[140%] tracking-[0.2px] border border-other-border px-3 py-4 flex"
           >
             Kategori
           </Link>
           <Link
-            to="/Profil"
+            to="/profil"
             className="text-dark-secondary font-medium leading-[140%] tracking-[0.2px] border border-other-border px-3 py-4 flex"
           >
             Profil Saya
           </Link>
           <Link
-            to="/Kelas"
+            to="/kelas"
             className="text-dark-secondary font-medium leading-[140%] tracking-[0.2px] border border-other-border px-3 py-4 flex"
           >
             Kelas Saya
           </Link>
           <Link
-            to="/Pesanan"
+            to="/pesanan"
             className="text-dark-secondary font-medium leading-[140%] tracking-[0.2px] border border-other-border px-3 py-4 flex "
           >
             Pesanan Saya
           </Link>
           <Link
-            to="/Login"
+            to="/login"
             className="flex items-center gap-[5px] text-error-default font-medium leading-[140%] tracking-[0.2px] border border-other-border px-3 py-4"
           >
             Keluar

@@ -1,4 +1,5 @@
 import Kategori_layout from "../layouts/Kategori_layout";
+import { BookText, ChevronDown, Clock, ShoppingBag } from 'lucide-react';
 
 const SemuaProduk = () => {
   return (
@@ -12,7 +13,59 @@ const SemuaProduk = () => {
             <p className="text-sm leading-[140%] tracking-[0.2px] text-dark-secondary">Jelajahi Dunia Pengetahuan Melalui Pilihan Kami!</p>
           </div>
           {/* Frame 1000004503 */}
-          <div></div>
+          <div className="grid gap-6">
+            {/* Desc & Button */}
+            <div className="grid w-f gap-3 rounded-[10px] border border-other-border p-4 bg-other-primary">
+              {/* Frame 1000004502 */}
+              <div className="flex justify-between">
+                <p className="font-semibold text-lg leading-[120%] text-dark-secondary">Filter</p>
+                <button className="font-medium leading-[140%] tracking-[0.2px] text-error-default">Reset</button>
+              </div>
+              {/* Frame 1000003794 */}
+              <div className="grid rounded-[10px] border border-other-border py-3 px-4 gap-4.5 bg-other-primary">
+                {/* Frame 1000004500 */}
+                <button className="flex gap-4 text-primary items-center justify-between">
+                  <div className="flex gap-4 items-center">
+                    <BookText />
+                    <p>Bidang Studi</p>
+                  </div>
+                  <ChevronDown />
+                </button>
+                {/* Frame 1000004501 */}
+              </div>
+              {/* Frame 1000004500 */}
+              <div className="grid rounded-[10px] border border-other-border py-3 px-4 gap-4.5 bg-other-primary">
+                {/* Frame 1000004500 */}
+                <button className="flex gap-4 text-primary items-center justify-between">
+                  <div className="flex gap-4 items-center">
+                    <ShoppingBag />
+                    <p>Harga</p>
+                  </div>
+                  <ChevronDown />
+                </button>
+                {/* Frame 1000004501 */}
+              </div>
+              {/* Frame 1000004501 */}
+              <div className="grid rounded-[10px] border border-other-border py-3 px-4 gap-4.5 bg-other-primary">
+                {/* Frame 1000004500 */}
+                <button className="flex gap-4 text-primary items-center justify-between">
+                  <div className="flex gap-4 items-center">
+                    <Clock />
+                    <p>Durasi</p>
+                  </div>
+                  <ChevronDown />
+                </button>
+                {/* Frame 1000004501 */}
+              </div>
+            </div>
+            
+            {/* Frame 1000004504 */}
+            <div className="flex gap-4">
+              <button></button>
+            </div>
+            {/* Frame 1000004505 */}
+            {/* Pagination/Page Nav */}
+          </div>
         </div>
       </Kategori_layout>
     </>
