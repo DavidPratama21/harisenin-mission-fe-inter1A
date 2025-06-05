@@ -1,8 +1,8 @@
 import { useEffect, useRef, useState } from "react";
 import { Menu, LogOut } from "lucide-react";
 import { Link } from "react-router";
-import Header from "../components/headers/Header_beranda";
-import Profile from "../assets/Profile.png";
+import Header from "../components/headers/Header_metode_pembayaran";
+import Footer from "../components/organisems/Footer";
 
 const Metode_layout = ({children}) => {
   const [isProfileOpen, setIsProfileOpen] = useState(false);
@@ -28,19 +28,6 @@ const Metode_layout = ({children}) => {
           className="sm:hidden"
           onClick={() => setIsProfileOpen(!isProfileOpen)}
         />
-        <Link 
-          to="/kategori"
-          className="hidden font-semibold leading-[140%] tracking-[0.2px] text-dark-secondary sm:inline">
-          Kategori
-        </Link>
-
-        <button onClick={() => setIsProfileOpen(!isProfileOpen)}>
-          <img
-            src={Profile}
-            alt="Profile picture"
-            className="w-11 rounded-[10px] hidden  sm:inline"
-          />
-        </button>
       </Header>
       {isProfileOpen && (
         // Drop Down Menu
@@ -83,6 +70,9 @@ const Metode_layout = ({children}) => {
         </div>
       )}
       {children}
+      <div className="sm:hidden">
+        <Footer/>
+      </div>
     </div>
   )
 }

@@ -1,4 +1,5 @@
 import Metode_layout from "../layouts/Metode_layout";
+import Stepper from "../components/molecules/Stepper";
 import { Link } from "react-router";
 import {
     BookCheck,
@@ -7,70 +8,41 @@ import {
     Video,
     FileBadge,
     Globe,
-    Circle,
     ChevronDown,
     CircleCheck,
-    ChevronUp,
-    CirclePlay,
-    Clock,
 } from "lucide-react";
-import Bca from "../assets/Banks/bca.png"
-import Bni from "../assets/Banks/bni.png"
-import Bri from "../assets/Banks/bri.png"
-import Mandiri from "../assets/Banks/mandiri.png"
-import Dana from "../assets/E-wallet/dana.png"
-import Ovo from "../assets/E-wallet/ovo.png"
-import Link_aja from "../assets/E-wallet/link_aja.png"
-import Shopee_pay from "../assets/E-wallet/shopee_pay.png"
-import Master from "../assets/Banks/master.png"
-import Visa from "../assets/Banks/visa.png"
-import Jcb from "../assets/Banks/jcb.png"
+import Bca from "../assets/Banks/bca.png";
+import Bni from "../assets/Banks/bni.png";
+import Bri from "../assets/Banks/bri.png";
+import Mandiri from "../assets/Banks/mandiri.png";
+import Dana from "../assets/E-wallet/dana.png";
+import Ovo from "../assets/E-wallet/ovo.png";
+import Link_aja from "../assets/E-wallet/link_aja.png";
+import Shopee_pay from "../assets/E-wallet/shopee_pay.png";
+import Master from "../assets/Banks/master.png";
+import Visa from "../assets/Banks/visa.png";
+import Jcb from "../assets/Banks/jcb.png";
+import Image from "../assets/Card_images/card_1.jpg"
 
 const Metode = () => {
     return (
         <Metode_layout>
-            <div className="grid py-7 px-5 gap-6 relative top-16 mb-16">
+            <div className="grid py-7 px-5 gap-6 relative top-16 mb-16 sm:py-16 sm:px-30 sm:gap-9 sm:max-w-[1440px] sm:mx-auto sm:flex">
                 {/* Stepper */}
-                <div className="flex h-14 items-center">
-                    {/* Pilih metode */}
-                    <div className="flex items-center gap-[5px] pr-3">
-                        {/* Circle */}
-                        <Circle color="#3ECF4C" fill="#3ECF4C" />
-                        <p className="font-bold text-xs leading-[140%] tracking-[0.2px] text-dark-primary">
-                            Pilih Metode
-                        </p>
-                    </div>
-                    {/* === */}
-                    <span className="w-3.5 h-[3px] bg-dark-disabled"></span>
-                    {/* Bayar */}
-                    <div className="flex items-center gap-[5px] pr-3">
-                        {/* Circle */}
-                        <Circle color="#3A354161" fill="#3A354161" />
-                        <p className="font-bold text-xs leading-[140%] tracking-[0.2px] text-dark-disabled">
-                            Bayar
-                        </p>
-                    </div>
-                    {/* === */}
-                    <span className="w-3.5 h-[3px] bg-dark-disabled"></span>
-                    {/* Selesai */}
-                    <div className="flex items-center gap-[5px] pr-3">
-                        {/* Circle */}
-                        <Circle color="#3A354161" fill="#3A354161" />
-                        <p className="font-bold text-xs leading-[140%] tracking-[0.2px] text-dark-disabled">
-                            Selesai
-                        </p>
-                    </div>
+                <div className="sm:hidden">
+                    <Stepper />
                 </div>
                 {/* Desc & Button */}
-                <div className="grid rounded-[10px] border border-other-border p-5 gap-5 bg-other-primary sm:order-1 sm:h-fit sm:p-6 sm:gap-6">
-                    {/* Frame 1000004507 */}
+                <div className="grid rounded-[10px] border border-other-border p-5 gap-5 bg-other-primary sm:order-1 sm:h-fit sm:p-6 sm:gap-6 sm:max-w-91.5">
+                    {/* Frame 4507 */}
                     <div className="grid gap-3 sm:gap-4">
+                        <img src={Image} alt="Image Gapai Karier" className="rounded-[10px]"/>
                         <h2 className="font-semibold text-lg leading-[120%] text-dark-primary">
                             Gapai Karier Impianmu sebagai Seorang UI/UX Designer & Product Manager.
                         </h2>
-                        {/* Frame 1000004502 */}
+                        {/* Frame 4502 */}
                         <div className="flex justify-between items-end">
-                            {/* Frame 1000004505 */}
+                            {/* Frame 4505 */}
                             <div className="flex gap-2">
                                 <p className="font-semibold text-lg leading-[120%] text-primary">
                                     Rp 250K
@@ -84,24 +56,13 @@ const Metode = () => {
                                 Diskon 50%
                             </span>
                         </div>
-                        <p className="font-medium text-sm leading-[140%] tracking-[0.2px] text-info-default">
-                            Penawaran spesial tersisa 2 hari lagi!
-                        </p>
                     </div>
-                    {/* Frame 1000004506 */}
-                    <Link
-                        to="/metode"
-                        className="bg-primary text-center rounded-[10px] py-[7px] px-5.5 font-bold text-sm leading-[140%] tracking-[0.2px] text-light-primary
-                                sm:text-base sm:py-2.5 sm:px-6.5"
-                    >
-                        Beli Sekarang
-                    </Link>
-                    {/* Frame 1000004765 */}
+                    {/* Frame 4765 */}
                     <div className="grid gap-3">
                         <p className="font-semibold text-sm leading-[21px] text-dark-primary">
                             Kelas Ini Sudah Termasuk
                         </p>
-                        {/* Frame 1000004429 */}
+                        {/* Frame 4429 */}
                         <div className="flex gap-4 w-72">
                             {/* Card 1 */}
                             <div className="grid gap-4 w-35">
@@ -146,7 +107,7 @@ const Metode = () => {
                             </div>
                         </div>
                     </div>
-                    {/* Frame 1000004766 */}
+                    {/* Frame 4766 */}
                     <div className="grid gap-3">
                         <p className="font-semibold text-sm leading-[21px] text-dark-primary">
                             Bahasa Pengantar
@@ -161,124 +122,198 @@ const Metode = () => {
                     </div>
                 </div>
                 {/* Frame 4755 */}
-                <div className="grid gap-6">
+                <div className="grid gap-6 sm:gap-9">
                     {/* Metode Pembayaran */}
-                    <div className="grid gap-5 p-5 rounded-[10px] border border-other-border bg-other-primary">
-                        <p className="font-semibold text-lg leading-[120%] text-dark-primary">Metode Pembayaran</p>
+                    <div className="grid gap-5 p-5 rounded-[10px] border border-other-border bg-other-primary sm:gap-6 sm:p-6">
+                        <p className="font-semibold text-lg leading-[120%] text-dark-primary sm:text-xl">
+                            Metode Pembayaran
+                        </p>
                         {/* Bank / E-wallet */}
                         <div className="grid gap-2.5">
                             <div className="flex justify-between py-4 px-5 border border-other-border rounded-[10px]">
-                              <p className="text-dark-primary font-bold text-sm leading-[140%] tracking-[0.2px]">Transfer Bank</p>
-                              <ChevronDown color="#333333AD"/>
+                                <p className="text-dark-primary font-bold text-sm leading-[140%] tracking-[0.2px] sm:text-base">
+                                    Transfer Bank
+                                </p>
+                                <ChevronDown color="#333333AD" />
                             </div>
                             {/* Banks */}
                             <div className="grid gap-2.5">
                                 <div className="flex justify-between py-4 px-5 border border-other-border rounded-[10px]">
                                     <div className="flex items-center gap-3">
                                         <div className="w-6">
-                                            <img src={Bca} alt="" className="size-full aspect-square object-cover object-left" />
+                                            <img
+                                                src={Bca}
+                                                alt="Bank BCA"
+                                                className="size-full aspect-square object-cover object-left"
+                                            />
                                         </div>
-                                        <p className="text-xs leading-[140%] tracking-[0.2px] text-dark-primary">Bank BCA</p>
-                                    </div>  
+                                        <p className="text-xs leading-[140%] tracking-[0.2px] text-dark-primary sm:text-sm">
+                                            Bank BCA
+                                        </p>
+                                    </div>
                                     <CircleCheck color="#fff" fill="#F64920" />
                                 </div>
                                 <div className="flex justify-between py-4 px-5 border border-other-border rounded-[10px]">
                                     <div className="flex items-center gap-3">
                                         <div className="w-6">
-                                            <img src={Bni} alt="" className="size-full aspect-square object-cover object-left" />
+                                            <img
+                                                src={Bni}
+                                                alt="Bank BNI"
+                                                className="size-full aspect-square object-cover object-left"
+                                            />
                                         </div>
-                                        <p className="text-xs leading-[140%] tracking-[0.2px] text-dark-primary">Bank BNI</p>
-                                    </div>  
+                                        <p className="text-xs leading-[140%] tracking-[0.2px] text-dark-primary sm:text-sm">
+                                            Bank BNI
+                                        </p>
+                                    </div>
                                     {/* <CircleCheck color="#fff" fill="#F64920" /> */}
                                 </div>
                                 <div className="flex justify-between py-4 px-5 border border-other-border rounded-[10px]">
                                     <div className="flex items-center gap-3">
                                         <div className="w-6">
-                                            <img src={Bri} alt="" className="size-full aspect-square object-cover object-left" />
+                                            <img
+                                                src={Bri}
+                                                alt="Bank BRI"
+                                                className="size-full aspect-square object-cover object-left"
+                                            />
                                         </div>
-                                        <p className="text-xs leading-[140%] tracking-[0.2px] text-dark-primary">Bank BRI</p>
-                                    </div>  
+                                        <p className="text-xs leading-[140%] tracking-[0.2px] text-dark-primary sm:text-sm">
+                                            Bank BRI
+                                        </p>
+                                    </div>
                                     {/* <CircleCheck color="#fff" fill="#F64920" /> */}
                                 </div>
                                 <div className="flex justify-between py-4 px-5 border border-other-border rounded-[10px]">
                                     <div className="flex items-center gap-3">
                                         <div className="w-6">
-                                            <img src={Mandiri} alt="" className="size-full aspect-square object-contain object-left" />
+                                            <img
+                                                src={Mandiri}
+                                                alt="Bank Mandiri"
+                                                className="size-full aspect-square object-contain object-left"
+                                            />
                                         </div>
-                                        <p className="text-xs leading-[140%] tracking-[0.2px] text-dark-primary">Bank Mandiri</p>
-                                    </div>  
+                                        <p className="text-xs leading-[140%] tracking-[0.2px] text-dark-primary sm:text-sm">
+                                            Bank Mandiri
+                                        </p>
+                                    </div>
                                     {/* <CircleCheck color="#fff" fill="#F64920" /> */}
                                 </div>
                             </div>
                             <div className="flex justify-between py-4 px-5 border border-other-border rounded-[10px]">
-                              <p className="text-dark-primary font-bold text-sm leading-[140%] tracking-[0.2px]">E-Wallet</p>
-                              <ChevronDown color="#333333AD"/>
+                                <p className="text-dark-primary font-bold text-sm leading-[140%] tracking-[0.2px] sm:text-base">
+                                    E-Wallet
+                                </p>
+                                <ChevronDown color="#333333AD" />
                             </div>
                             {/* E-wallets */}
                             <div className="grid gap-2.5">
                                 <div className="flex justify-between py-4 px-5 border border-other-border rounded-[10px]">
                                     <div className="flex items-center gap-3">
                                         <div className="w-6">
-                                            <img src={Dana} alt="" className="size-full aspect-square object-cover object-left" />
+                                            <img
+                                                src={Dana}
+                                                alt="Dana"
+                                                className="size-full aspect-square object-cover object-left"
+                                            />
                                         </div>
-                                        <p className="text-xs leading-[140%] tracking-[0.2px] text-dark-primary">Dana</p>
-                                    </div>  
+                                        <p className="text-xs leading-[140%] tracking-[0.2px] text-dark-primary sm:text-sm">
+                                            Dana
+                                        </p>
+                                    </div>
                                     {/* <CircleCheck color="#fff" fill="#F64920" /> */}
                                 </div>
                                 <div className="flex justify-between py-4 px-5 border border-other-border rounded-[10px]">
                                     <div className="flex items-center gap-3">
                                         <div className="w-6">
-                                            <img src={Ovo} alt="" className="size-full aspect-square object-cover object-left" />
+                                            <img
+                                                src={Ovo}
+                                                alt="Ovo"
+                                                className="size-full aspect-square object-cover object-left"
+                                            />
                                         </div>
-                                        <p className="text-xs leading-[140%] tracking-[0.2px] text-dark-primary">OVO</p>
-                                    </div>  
+                                        <p className="text-xs leading-[140%] tracking-[0.2px] text-dark-primary sm:text-sm">
+                                            OVO
+                                        </p>
+                                    </div>
                                     {/* <CircleCheck color="#fff" fill="#F64920" /> */}
                                 </div>
                                 <div className="flex justify-between py-4 px-5 border border-other-border rounded-[10px]">
                                     <div className="flex items-center gap-3">
                                         <div className="w-6">
-                                            <img src={Link_aja} alt="" className="size-full aspect-square object-cover object-left" />
+                                            <img
+                                                src={Link_aja}
+                                                alt="LinkAja"
+                                                className="size-full aspect-square object-cover object-left"
+                                            />
                                         </div>
-                                        <p className="text-xs leading-[140%] tracking-[0.2px] text-dark-primary">LinkAja</p>
-                                    </div>  
+                                        <p className="text-xs leading-[140%] tracking-[0.2px] text-dark-primary sm:text-sm">
+                                            LinkAja
+                                        </p>
+                                    </div>
                                     {/* <CircleCheck color="#fff" fill="#F64920" /> */}
                                 </div>
                                 <div className="flex justify-between py-4 px-5 border border-other-border rounded-[10px]">
                                     <div className="flex items-center gap-3">
                                         <div className="w-6">
-                                            <img src={Shopee_pay} alt="" className="size-full aspect-square object-contain object-left" />
+                                            <img
+                                                src={Shopee_pay}
+                                                alt="Shopee Pay"
+                                                className="size-full aspect-square object-contain object-left"
+                                            />
                                         </div>
-                                        <p className="text-xs leading-[140%] tracking-[0.2px] text-dark-primary">Shopee Pay</p>
-                                    </div>  
+                                        <p className="text-xs leading-[140%] tracking-[0.2px] text-dark-primary sm:text-sm">
+                                            Shopee Pay
+                                        </p>
+                                    </div>
                                     {/* <CircleCheck color="#fff" fill="#F64920" /> */}
                                 </div>
                             </div>
                             <div className="flex justify-between py-4 px-5 border border-other-border rounded-[10px]">
-                              <p className="text-dark-primary font-bold text-sm leading-[140%] tracking-[0.2px]">Kartu Kredit/Debit</p>
-                              <ChevronDown color="#333333AD"/>
+                                <p className="text-dark-primary font-bold text-sm leading-[140%] tracking-[0.2px] sm:text-base">
+                                    Kartu Kredit/Debit
+                                </p>
+                                <ChevronDown color="#333333AD" />
                             </div>
                             <div className="flex justify-between py-4 px-5 border border-other-border rounded-[10px]">
                                 <div className="flex items-center gap-3">
                                     <img src={Master} alt="" className="h-4" />
                                     <img src={Visa} alt="" className="h-4.5" />
                                     <img src={Jcb} alt="" className="h-4" />
-                                </div>  
+                                </div>
                                 {/* <CircleCheck color="#fff" fill="#F64920" /> */}
                             </div>
                         </div>
                     </div>
                     {/* Ringkasan Pesanan */}
-                    <div className="grid gap-5 p-5 rounded-[10px] border border-other-border bg-other-primary">
-                      <p className="font-semibold text-lg leading-[120%] text-dark-primary">Ringkasan Pesanan</p>
-                      {/* Frame 3884 */}
-                      <div className="flex leading-[140%] tracking-[0.2px] text-dark-secondary">
-                        <p>Video Learning: Gapai Karier Impianmu sebagai Seorang UI/UX Designer & Product Manager. </p>
-                        <p className="font-bold">Rp 767.500</p>
-                      </div>
-                      {/* Frame 3885 */}
-                      <span></span>
-                      {/* Frame 42250 */}
-                      <button>Beli Sekarang</button>
+                    <div className="grid gap-5 p-5 rounded-[10px] border border-other-border bg-other-primary sm:gap-6 sm:p-6">
+                        <p className="font-semibold text-lg leading-[120%] text-dark-primary sm:text-xl">
+                            Ringkasan Pesanan
+                        </p>
+                        {/* Frame 3884 */}
+                        <div className="flex gap-6 leading-[140%] tracking-[0.2px] text-dark-secondary sm:text-lg">
+                            <p>
+                                Video Learning: Gapai Karier Impianmu sebagai Seorang UI/UX Designer & Product Manager.
+                            </p>
+                            <p className="font-bold">Rp 767.500</p>
+                        </div>
+                        {/* Frame 3885 */}
+                        <div className="flex justify-between leading-[140%] tracking-[0.2px] text-dark-secondary sm:text-lg">
+                            <p>Biaya Admin</p>
+                            <p className="font-bold">Rp 7.000</p>
+                        </div>
+                        <span className="w-full h-[1px] bg-other-border"></span>
+                        {/* Frame 42250 */}
+                        <div className="flex justify-between">
+                            <p className="font-bold leading-[140%] tracking-[0.2px] text-dark-primary sm:text-lg">
+                                Total Pembayaran
+                            </p>
+                            <p className="font-semibold text-lg leading-[120%] text-primary sm:text-xl">
+                                Rp 7.000
+                            </p>
+                        </div>
+                        <Link to="/bayar" className="rounded-[10px] bg-primary py-[7px] px-5.5 text-light-primary font-bold text-sm leading-[140%] tracking-[0.2px] sm:py-2.5 sm:px-6.5 sm:text-base">
+                            Beli Sekarang
+                        </Link>
                     </div>
                 </div>
             </div>

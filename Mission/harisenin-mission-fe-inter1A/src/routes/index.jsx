@@ -5,6 +5,7 @@ import Register from "../pages/Register";
 import Kategori from "../pages/Kategori";
 import DetailProduk from "../pages/DetailProduk";
 import Metode from "../pages/Metode";
+import Bayar from "../pages/Bayar";
 
 export const router = createBrowserRouter([
     {
@@ -30,5 +31,9 @@ export const router = createBrowserRouter([
     {
         path: "/metode",
         element: <Metode />,
+    },
+    {
+        path: "/bayar",
+        element: <Bayar />,
     },
 ]);
