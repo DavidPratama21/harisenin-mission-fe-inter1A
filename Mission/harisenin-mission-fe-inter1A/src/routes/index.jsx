@@ -6,6 +6,8 @@ import Kategori from "../pages/Kategori";
 import DetailProduk from "../pages/DetailProduk";
 import Metode from "../pages/Metode";
 import Bayar from "../pages/Bayar";
+import UbahMetodePembayaran from "../pages/UbahMetodePembayaran";
+import Selesai from "../pages/Selesai";
 
 export const router = createBrowserRouter([
     {
@@ -35,5 +37,13 @@ export const router = createBrowserRouter([
     {
         path: "/bayar",
         element: <Bayar />,
+    },
+    {
+        path: "/ubahMetode",
+        element: <UbahMetodePembayaran />,
+    },
+    {
+        path: "/selesai",
+        element: <Selesai />,
     },
 ]);

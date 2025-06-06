@@ -1,4 +1,4 @@
-import Metode_layout from "../layouts/Metode_layout";
+import UbahMetodePembayaran_layout from "../layouts/UbahMetodePembayaran_layout";
 import Stepper from "../components/molecules/Stepper";
 import { Link } from "react-router";
 import {
@@ -24,21 +24,26 @@ import Visa from "../assets/Banks/visa.png";
 import Jcb from "../assets/Banks/jcb.png";
 import Image from "../assets/Card_images/card_1.jpg"
 
-const Metode = () => {
+const UbahMetodePembayaran = () => {
     return (
-        <Metode_layout>
+        <UbahMetodePembayaran_layout>
             <div className="grid py-7 px-5 gap-6 relative top-16 mb-16 sm:py-16 sm:px-30 sm:gap-9 sm:max-w-[1440px] sm:mx-auto sm:flex">
                 {/* Stepper */}
-                <div className="sm:hidden">
+                <div className="sm:hidden  justify-self-center">
                     <Stepper />
                 </div>
                 {/* Desc & Button */}
                 <div className="grid rounded-[10px] border border-other-border p-5 gap-5 bg-other-primary sm:order-1 sm:h-fit sm:p-6 sm:gap-6 sm:max-w-91.5">
                     {/* Frame 4507 */}
                     <div className="grid gap-3 sm:gap-4">
-                        <img src={Image} alt="Image Gapai Karier" className="rounded-[10px] hidden sm:inline"/>
+                        <img
+                            src={Image}
+                            alt="Image Gapai Karier"
+                            className="rounded-[10px] hidden sm:inline"
+                        />
                         <h2 className="font-semibold text-lg leading-[120%] text-dark-primary">
-                            Gapai Karier Impianmu sebagai Seorang UI/UX Designer & Product Manager.
+                            Gapai Karier Impianmu sebagai Seorang UI/UX Designer
+                            & Product Manager.
                         </h2>
                         {/* Frame 4502 */}
                         <div className="flex justify-between items-end">
@@ -122,11 +127,37 @@ const Metode = () => {
                     </div>
                 </div>
                 {/* Frame 4755 */}
-                <div className="grid gap-6 sm:gap-9">
+                <div className="grid gap-6 sm:gap-9 sm:w-full">
+                    {/* Ringkasan Pesanan */}
+                    <div className="grid gap-5 p-5 rounded-[10px] border border-other-border bg-other-primary sm:gap-6 sm:p-6">
+                        <p className="font-semibold text-lg leading-[120%] text-dark-primary sm:text-xl">
+                            Ringkasan Pesanan
+                        </p>
+                        {/* Frame 3884 */}
+                        <div className="flex justify-between leading-[140%] tracking-[0.2px] text-dark-secondary sm:text-lg">
+                            <p>Total Harga (3 Barang)</p>
+                            <p className="font-bold">Rp 767.500</p>
+                        </div>
+                        {/* Frame 3885 */}
+                        <div className="flex justify-between leading-[140%] tracking-[0.2px] text-dark-secondary sm:text-lg">
+                            <p>Ongkos Kirim</p>
+                            <p className="font-bold">Rp 7.000</p>
+                        </div>
+                        <span className="w-full h-[1px] bg-other-border"></span>
+                        {/* Frame 42250 */}
+                        <div className="flex justify-between">
+                            <p className="font-bold leading-[140%] tracking-[0.2px] text-dark-primary sm:text-lg">
+                                Total Pembayaran
+                            </p>
+                            <p className="font-semibold text-lg leading-[120%] text-primary sm:text-xl">
+                                Rp 774.500
+                            </p>
+                        </div>
+                    </div>
                     {/* Metode Pembayaran */}
                     <div className="grid gap-5 p-5 rounded-[10px] border border-other-border bg-other-primary sm:gap-6 sm:p-6">
                         <p className="font-semibold text-lg leading-[120%] text-dark-primary sm:text-xl">
-                            Metode Pembayaran
+                            Ubah Metode Pembayaran
                         </p>
                         {/* Bank / E-wallet */}
                         <div className="grid gap-2.5">
@@ -137,7 +168,7 @@ const Metode = () => {
                                 <ChevronDown color="#333333AD" />
                             </div>
                             {/* Banks */}
-                            <div className="grid gap-2.5">
+                            {/* <div className="grid gap-2.5">
                                 <div className="flex justify-between py-4 px-5 border border-other-border rounded-[10px]">
                                     <div className="flex items-center gap-3">
                                         <div className="w-6">
@@ -166,7 +197,7 @@ const Metode = () => {
                                             Bank BNI
                                         </p>
                                     </div>
-                                    {/* <CircleCheck color="#fff" fill="#F64920" /> */}
+                                    <CircleCheck color="#fff" fill="#F64920" />
                                 </div>
                                 <div className="flex justify-between py-4 px-5 border border-other-border rounded-[10px]">
                                     <div className="flex items-center gap-3">
@@ -181,7 +212,7 @@ const Metode = () => {
                                             Bank BRI
                                         </p>
                                     </div>
-                                    {/* <CircleCheck color="#fff" fill="#F64920" /> */}
+                                    <CircleCheck color="#fff" fill="#F64920" />
                                 </div>
                                 <div className="flex justify-between py-4 px-5 border border-other-border rounded-[10px]">
                                     <div className="flex items-center gap-3">
@@ -196,9 +227,9 @@ const Metode = () => {
                                             Bank Mandiri
                                         </p>
                                     </div>
-                                    {/* <CircleCheck color="#fff" fill="#F64920" /> */}
+                                    <CircleCheck color="#fff" fill="#F64920" />
                                 </div>
-                            </div>
+                            </div> */}
                             <div className="flex justify-between py-4 px-5 border border-other-border rounded-[10px]">
                                 <p className="text-dark-primary font-bold text-sm leading-[140%] tracking-[0.2px] sm:text-base">
                                     E-Wallet
@@ -206,7 +237,7 @@ const Metode = () => {
                                 <ChevronDown color="#333333AD" />
                             </div>
                             {/* E-wallets */}
-                            <div className="grid gap-2.5">
+                            {/* <div className="grid gap-2.5">
                                 <div className="flex justify-between py-4 px-5 border border-other-border rounded-[10px]">
                                     <div className="flex items-center gap-3">
                                         <div className="w-6">
@@ -220,7 +251,7 @@ const Metode = () => {
                                             Dana
                                         </p>
                                     </div>
-                                    {/* <CircleCheck color="#fff" fill="#F64920" /> */}
+                                    <CircleCheck color="#fff" fill="#F64920" />
                                 </div>
                                 <div className="flex justify-between py-4 px-5 border border-other-border rounded-[10px]">
                                     <div className="flex items-center gap-3">
@@ -235,7 +266,7 @@ const Metode = () => {
                                             OVO
                                         </p>
                                     </div>
-                                    {/* <CircleCheck color="#fff" fill="#F64920" /> */}
+                                    <CircleCheck color="#fff" fill="#F64920" />
                                 </div>
                                 <div className="flex justify-between py-4 px-5 border border-other-border rounded-[10px]">
                                     <div className="flex items-center gap-3">
@@ -250,7 +281,7 @@ const Metode = () => {
                                             LinkAja
                                         </p>
                                     </div>
-                                    {/* <CircleCheck color="#fff" fill="#F64920" /> */}
+                                    <CircleCheck color="#fff" fill="#F64920" />
                                 </div>
                                 <div className="flex justify-between py-4 px-5 border border-other-border rounded-[10px]">
                                     <div className="flex items-center gap-3">
@@ -265,60 +296,36 @@ const Metode = () => {
                                             Shopee Pay
                                         </p>
                                     </div>
-                                    {/* <CircleCheck color="#fff" fill="#F64920" /> */}
+                                    <CircleCheck color="#fff" fill="#F64920" />
                                 </div>
-                            </div>
+                            </div> */}
                             <div className="flex justify-between py-4 px-5 border border-other-border rounded-[10px]">
                                 <p className="text-dark-primary font-bold text-sm leading-[140%] tracking-[0.2px] sm:text-base">
                                     Kartu Kredit/Debit
                                 </p>
                                 <ChevronDown color="#333333AD" />
                             </div>
-                            <div className="flex justify-between py-4 px-5 border border-other-border rounded-[10px]">
+                            {/* <div className="flex justify-between py-4 px-5 border border-other-border rounded-[10px]">
                                 <div className="flex items-center gap-3">
                                     <img src={Master} alt="" className="h-4" />
                                     <img src={Visa} alt="" className="h-4.5" />
                                     <img src={Jcb} alt="" className="h-4" />
                                 </div>
-                                {/* <CircleCheck color="#fff" fill="#F64920" /> */}
-                            </div>
+                                <CircleCheck color="#fff" fill="#F64920" />
+                            </div> */}
+                            <Link
+                                to="/bayar"
+                                className="rounded-[10px] text-center bg-primary py-[7px] px-5.5 text-light-primary font-bold text-sm leading-[140%] tracking-[0.2px] sm:py-2.5 sm:px-6.5 sm:text-base"
+                            >
+                                Beli Sekarang
+                            </Link>
                         </div>
                     </div>
-                    {/* Ringkasan Pesanan */}
-                    <div className="grid gap-5 p-5 rounded-[10px] border border-other-border bg-other-primary sm:gap-6 sm:p-6">
-                        <p className="font-semibold text-lg leading-[120%] text-dark-primary sm:text-xl">
-                            Ringkasan Pesanan
-                        </p>
-                        {/* Frame 3884 */}
-                        <div className="flex gap-6 leading-[140%] tracking-[0.2px] text-dark-secondary sm:text-lg">
-                            <p>
-                                Video Learning: Gapai Karier Impianmu sebagai Seorang UI/UX Designer & Product Manager.
-                            </p>
-                            <p className="font-bold">Rp 767.500</p>
-                        </div>
-                        {/* Frame 3885 */}
-                        <div className="flex justify-between leading-[140%] tracking-[0.2px] text-dark-secondary sm:text-lg">
-                            <p>Biaya Admin</p>
-                            <p className="font-bold">Rp 7.000</p>
-                        </div>
-                        <span className="w-full h-[1px] bg-other-border"></span>
-                        {/* Frame 42250 */}
-                        <div className="flex justify-between">
-                            <p className="font-bold leading-[140%] tracking-[0.2px] text-dark-primary sm:text-lg">
-                                Total Pembayaran
-                            </p>
-                            <p className="font-semibold text-lg leading-[120%] text-primary sm:text-xl">
-                                Rp 7.000
-                            </p>
-                        </div>
-                        <Link to="/bayar" className="rounded-[10px] bg-primary py-[7px] px-5.5 text-light-primary font-bold text-sm leading-[140%] tracking-[0.2px] sm:py-2.5 sm:px-6.5 sm:text-base">
-                            Beli Sekarang
-                        </Link>
-                    </div>
+                    
                 </div>
             </div>
-        </Metode_layout>
+        </UbahMetodePembayaran_layout>
     );
 };
 
-export default Metode;
+export default UbahMetodePembayaran;
