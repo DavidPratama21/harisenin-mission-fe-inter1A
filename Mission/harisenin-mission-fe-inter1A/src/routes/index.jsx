@@ -8,6 +8,7 @@ import Metode from "../pages/Metode";
 import Bayar from "../pages/Bayar";
 import UbahMetodePembayaran from "../pages/UbahMetodePembayaran";
 import Selesai from "../pages/Selesai";
+import Pesanan from "../pages/Pesanan";
 
 export const router = createBrowserRouter([
     {
@@ -45,5 +46,9 @@ export const router = createBrowserRouter([
     {
         path: "/selesai",
         element: <Selesai />,
+    },
+    {
+        path: "/pesanan",
+        element: <Pesanan />,
     },
 ]);

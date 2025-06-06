@@ -10,7 +10,7 @@ const Header_metode_pembayaran = ({children}) => {
         sm:py-3 sm:px-30 sm:gap-9 sm:border-b sm:shadow-none"
         >
             {/* Frame 3 */}
-            <div className="flex justify-between items-center sm:w-[1440px] mx-auto ">
+            <div className="flex justify-between items-center w-full">
                 {/* Logo */}
                 <Link
                     to="/"
@@ -25,8 +25,8 @@ const Header_metode_pembayaran = ({children}) => {
                 <div className="hidden sm:inline">
                     <Stepper />
                 </div>
-                {children}
             </div>
+                {children}
         </div>
     );
 };
