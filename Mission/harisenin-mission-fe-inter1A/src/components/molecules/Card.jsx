@@ -5,15 +5,10 @@ const Card = ({ image, tutor }) => {
     return (
         <Link
             to="/detailProduk"
-            className="grid rounded-[10px] p-4 gap-2 bg-other-primary border border-other-border 
-      sm:w-[384px] sm:p-5"
+            className="grid rounded-[10px] p-4 gap-2 bg-other-primary border border-other-border sm:w-[384px] sm:p-5"
         >
             {/* Frame 1000004805, Img, Title, Tutor */}
-            <div
-                className="
-          flex gap-3 items-center
-          sm:grid"
-            >
+            <div className="flex gap-3 items-center sm:grid">
                 {/* Image */}
                 <img
                     src={image}
@@ -25,11 +20,7 @@ const Card = ({ image, tutor }) => {
                 <div className="grid gap-2 sm:gap-3">
                     {/* Title */}
                     <div className="grid gap-2">
-                        <h6
-                            className="
-                text-dark-primary font-semibold text-base leading-[120%]
-                sm:text-lg"
-                        >
+                        <h6 className="text-dark-primary font-semibold text-base leading-[120%] sm:text-lg">
                             Big 4 Auditor Financial Analyst
                         </h6>
                         <p className="hidden sm:block font-medium leading-[140%] tracking-[0.2px] text-dark-secondary">
@@ -137,9 +128,7 @@ const Card = ({ image, tutor }) => {
                             />
                         </svg>
                     </div>
-                    <p
-                        className="font-medium text-xs leading-[140%] tracking-[0.2px] underline text-dark-secondary sm:text-sm"
-                    >
+                    <p className="font-medium text-xs leading-[140%] tracking-[0.2px] underline text-dark-secondary sm:text-sm">
                         3.5 (86)
                     </p>
                 </div>

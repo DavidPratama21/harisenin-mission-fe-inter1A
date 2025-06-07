@@ -34,10 +34,7 @@ const Kategori = () => {
         <>
             <Kategori_layout>
                 {/* Frame 1000003752 */}
-                <div
-                    className="grid py-7 px-5 gap-6 relative top-16 mb-16
-          sm:py-16 sm:px-30 sm:gap-9 sm:max-w-[1440px] sm:mx-auto"
-                >
+                <div className="grid py-7 px-5 gap-6 relative top-16 mb-16 sm:py-16 sm:px-30 sm:gap-9 sm:max-w-[1440px] sm:mx-auto">
                     {/* Frame 1000003692 */}
                     <div className="grid gap-2.5">
                         <h1 className="font-semibold text-2xl leading-[110%] text-dark-primary sm:text-[32px]">
