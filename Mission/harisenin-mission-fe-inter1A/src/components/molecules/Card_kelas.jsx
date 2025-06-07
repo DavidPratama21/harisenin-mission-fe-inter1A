@@ -123,7 +123,7 @@ const Card_pesanan = ({ status = "Selesai" }) => {
                         </Link>
                     )}
                     <Button
-                        to=""
+                        to={status === "otw" ? "/video" : ""}
                         action={
                             status === "otw"
                                 ? "Lanjutkan Pembelajaran"
